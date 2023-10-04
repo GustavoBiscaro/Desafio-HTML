@@ -12,7 +12,7 @@
       <h1>Cadastro de Login</h1>
     </header>
     <main>
-      <form method="get" action="./infosLogin.html">
+      <form method="get" id="defaultForm" action="./infosLogin.html">
         <fieldset class="field-infos">
           <legend class="legend-title">Informações Pessoais</legend>
           <label for="nome">Nome </label>
@@ -32,11 +32,11 @@
           />
 
           <span>Gênero</span>
-          
+          <!-- Corrigir -->
           <label for="masculino">Masculino</label>
-          <input type="radio" id="masculino" name="genero" value="Masculino" />
+          <input type="radio" class="genero" id="masculino" name="masculino" value="Masculino" />
           <label for="feminino">Feminino</label>
-          <input type="radio" id="feminino" name="genero" value="Feminino" />
+          <input type="radio" class="genero" id="feminino" name="feminino" value="Feminino" />
         </fieldset>
 
         <fieldset class="field-infos">
@@ -62,7 +62,6 @@
           <label for="password">Digite novamente sua senha</label>
           <input
             type="password"
-            id="password"
             name="password"
             min="8"
             max="10"
@@ -173,16 +172,16 @@
         </fieldset>
 
         <div id="submit">
-          <button type="submit">Enviar formulário</button>
+          <button onclick="exibir()" id="enviarForm" type="button">Enviar formulário</button>
           <button type="reset">Limpar</button>
         </div>
     </form>
     </main>
 
     <footer>
-      ©Copyright - Campinho Digital 2023 - Gustavo Miguel Oliveira Biscaro
+      ©Copyright | Campinho Digital 2023 - Gustavo Miguel Oliveira Biscaro
     </footer>
 
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
   </body>
 </html>

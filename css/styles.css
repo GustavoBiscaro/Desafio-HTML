@@ -53,6 +53,7 @@ form {
     clear: both;
     opacity: 0.7;
     flex-direction: column;
+    border: 5px groove #fff;
 }
 
 .field-infos {
