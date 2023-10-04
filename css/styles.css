@@ -145,6 +145,7 @@ button {
 button:hover {
     color: white;
     border: 2px solid rgba(248, 96, 2, 0.936);
+    cursor: pointer;
 }
 
 footer {
