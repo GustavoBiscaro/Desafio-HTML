@@ -24,6 +24,8 @@ header h1 {
     padding: 10px;
     font-size: 2.1em;
     font-weight: bolder;
+    background-image: url('../img/blood.png');
+    background-repeat: no-repeat;
 }
 
 main {
@@ -39,6 +41,45 @@ form {
     margin: 10px;
     padding: 10px;
     position: relative;
-    width: 50%;
-    border-image: url('../img/blood.png');
+}
+
+.field-infos {
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.legend-title {
+    display: block;
+    clear: both;
+    font-size: 1.5em;
+    color: rgba(238, 87, 5, 0.9);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    
 }
