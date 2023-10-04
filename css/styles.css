@@ -11,6 +11,7 @@ body {
     background-size: 100%;
     box-sizing: border-box;
     clear: both;
+    background-color: rgba(0, 0, 0, .9);
 
 }
 header {
@@ -126,13 +127,18 @@ textarea {
     height: 100px;
     background-color: rgba(248, 96, 2, 0.936);
     font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);;
 }
 
 footer {
-    background-color: linear-gradient(90deg, #fb3b01 2%, rgba(0, 0, 0, 0.1));
+    display: block;
     text-align: center;
-    align-items: center;
-    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 2px 0;
+    background: linear-gradient(90deg, #fb3b01 2%, rgba(0, 0, 0, 0.1));
     padding: 10px;
-    font-size: 1.4em;
+    font-size: 1em;
+    font-weight: bolder;
+    margin: 2px 0px 0px 0px;
+    width: 100%;
 }
