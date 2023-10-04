@@ -1,7 +1,7 @@
-let nome = document.querySelector('#nome');
-let dataNasc = document.querySelector('#nascimento');
-let genero = document.querySelector('.genero').value;
+const nome = document.querySelector("#nome");
+const dataNasc = document.querySelector("#nascimento");
 
-function exibir(){
-    console.log(genero)
+
+function exibir() {
+   
 }
