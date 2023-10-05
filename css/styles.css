@@ -109,6 +109,10 @@ font-size: 1.1em;
 margin: 15px;
 }
 
+#repeat-password {
+    width: 20%;
+}
+
 form input::target {
     background-color: blue;
 }

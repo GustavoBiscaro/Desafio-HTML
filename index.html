@@ -55,8 +55,8 @@
             type="password"
             id="password"
             name="password"
-            min="8"
-            max="10"
+            minlength="8"
+            maxlength="10"
             placeholder="Digite sua senha"
           />
 
@@ -65,8 +65,8 @@
             type="password"
             id="repeat-password"
             name="password"
-            min="8"
-            max="10"
+            minlength="8"
+            maxlength="10"
             placeholder="Digite sua senha novamente"
           />
         </fieldset>
@@ -166,10 +166,9 @@
             placeholder="Avalie :)"
           ></textarea>
         </fieldset>
-
+        <button id='exibir' type="button">Exibir</button>
         <div id="submit">
-          <button id="enviarForm" type="button">Enviar formulário</button>
-          <button onclick="exibir()" id="enviarForm" type="submit">Enviar formulário</button>
+          <button id="enviarForm" type="submit">Enviar formulário</button>
           <button type="reset">Limpar</button>
         </div>
     </form>
