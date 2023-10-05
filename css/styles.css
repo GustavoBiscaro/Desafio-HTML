@@ -109,6 +109,14 @@ font-size: 1.1em;
 margin: 15px;
 }
 
+#repeat-password {
+    width: 20%;
+}
+
+form input::target {
+    background-color: blue;
+}
+
 form select {
  margin: 15px;
  font-size: 1.1em;
@@ -160,4 +168,41 @@ footer {
     font-weight: bolder;
     margin: 2px 0px 0px 0px;
     width: 100%;
+}
+
+/* TELA InfosLogin.html */
+
+#labelData {
+    color: rgb(189, 140, 35);
+    margin: 15px 0 15px 0;
+}
+#infoScreen {
+    display: block;
+    color: black;
+    flex-direction: column;
+    font-size: 1.1em;
+    border: 3px solid #ae3814;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 10px 0 20px 0;
+}
+hr {
+    border: 2px groove rgba(248, 96, 2, 0.936);
+}
+
+
+
+#title-content {
+    
+    background-color: #231f1e;
+    flex-direction: column;
+}
+#infoScreen h1 {
+    color:white;
+    padding: 15px;
+   
 }
