@@ -109,6 +109,10 @@ font-size: 1.1em;
 margin: 15px;
 }
 
+form input::target {
+    background-color: blue;
+}
+
 form select {
  margin: 15px;
  font-size: 1.1em;
