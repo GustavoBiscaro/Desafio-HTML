@@ -171,6 +171,11 @@ footer {
 }
 
 /* TELA InfosLogin.html */
+#container-info {
+    display: flex;
+    flex-direction: column;
+
+}
 
 #labelData {
     color: rgb(189, 140, 35);
@@ -201,8 +206,36 @@ hr {
     background-color: #231f1e;
     flex-direction: column;
 }
-#infoScreen h1 {
+#title-content h1 {
+    border: 5px groove rgba(248, 96, 2, 0.936);
     color:white;
     padding: 15px;
    
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+
+
+}
+
+#home a {
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgba(248, 96, 2, 0.936);
+    color: #fff;
+}
+
+#home a:hover {
+    background: #242020;
+    color:rgba(248, 96, 2, 0.936);
+    border: 2px groove #fff;
+
 }

@@ -1,31 +1,40 @@
+// Campos padrão
+const getName = document.getElementById('nome');
+const getDate = document.getElementById('nascimento');
+const getMail = document.getElementById('email');
+const getAverage = document.getElementById('nota');
+const getMessage = document.getElementById('avaliar');
 
-/* Divs */
-const registroHTML = document.querySelector("#infoScreen");
-const tituloScreenRegistro = document.getElementById("title-content");
-/*Campos comuns*/
-const nome = document.querySelector("#nome");
-const dataNasc = document.querySelector("#nascimento");
-const email = document.querySelector("#email");
-const senha = document.querySelector("#password");
-const mesmaSenha = document.querySelector("#repeat-password");
-const media = document.querySelector("#nota");
-const avaliacao = document.querySelector("#avaliar");
+// Botão
+const getButton = document.querySelector('#botaoRequisicao');
 
-/* submit */
-const envioRegistro = document.querySelector("#envio");
+// Selects e radios
+const getCountry = document.querySelector('#pais');
+const getState = document.querySelector('#estado');
+const getCity = document.querySelector('#cidades');
 
-/* Selects */
-const pais = document.querySelector("#pais");
-const estado = document.querySelector("#estado");
-const cidade = document.querySelector("#cidades");
-
-/* radios */
-
-/*envioRegistro.addEventListener('click', ()=> {
-    console.log(cidade.value)
-})*/
+const getGender = document.querySelectorAll('input[type="radio"][name="genero"]');
 
 
-function dadosForm() {
-   registroHTML.innerHTML = '<h3>eeeee </h3>'
-}
+/* getButton.addEventListener('click', () => {
+    console.log(getName.value);
+    console.log(getDate.value);
+    console.log(getMail.value);
+    console.log(getAverage.value);
+    console.log(getMessage.value);
+    console.log(getCountry.value);
+    console.log(getState.value);
+    console.log(getCity.value);
+});
+
+ Mostrar gênero 
+
+getGender.forEach(function(gender) {
+    gender.addEventListener('change', function() {
+        if(this.checked) {
+            console.log("Opção selecionada: ", this.value);
+        }   
+    });
+});
+
+*/
