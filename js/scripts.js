@@ -1,40 +1,40 @@
-// Campos padrão
-const getName = document.getElementById('nome');
-const getDate = document.getElementById('nascimento');
-const getMail = document.getElementById('email');
-const getAverage = document.getElementById('nota');
-const getMessage = document.getElementById('avaliar');
-
-// Botão
-const getButton = document.querySelector('#botaoRequisicao');
-
-// Selects e radios
-const getCountry = document.querySelector('#pais');
-const getState = document.querySelector('#estado');
-const getCity = document.querySelector('#cidades');
-
-const getGender = document.querySelectorAll('input[type="radio"][name="genero"]');
+const infoScreen = document.querySelector('#headerInfo');
 
 
-/* getButton.addEventListener('click', () => {
-    console.log(getName.value);
-    console.log(getDate.value);
-    console.log(getMail.value);
-    console.log(getAverage.value);
-    console.log(getMessage.value);
-    console.log(getCountry.value);
-    console.log(getState.value);
-    console.log(getCity.value);
-});
 
- Mostrar gênero 
+// Função para extrair os parâmetros da URL
+function obterParametroPorNome(nome, url) {
+    // Se a URL não for fornecida, use a URL atual da janela
+    if (!url) url = window.location.href;
+    // Escapar caracteres especiais no nome do parâmetro
+    nome = nome.replace(/[\[\]]/g, "\\$&");
+    // Criar uma expressão regular para procurar o parâmetro na URL
+    var regex = new RegExp("[?&]" + nome + "(=([^&#]*)|&|#|$)");
+    // Executar a expressão regular na URL
+    var resultados = regex.exec(url);
+    // Se não houver resultados, retornar nulo
+    if (!resultados) return null;
+    // Se o valor do parâmetro estiver ausente, retornar uma string vazia
+    if (!resultados[2]) return '';
+    // Decodificar o valor do parâmetro e substituir os "+" por espaços
+    return decodeURIComponent(resultados[2].replace(/\+/g, " "));
+}
 
-getGender.forEach(function(gender) {
-    gender.addEventListener('change', function() {
-        if(this.checked) {
-            console.log("Opção selecionada: ", this.value);
-        }   
-    });
-});
+var getName = obterParametroPorNome("nome");
+var getDate = obterParametroPorNome("nascimento");
+var getGender = obterParametroPorNome("genero");
+var getEmail = obterParametroPorNome("email");
+var getCountry = obterParametroPorNome("pais");
+var getState = obterParametroPorNome("estado");
+var getCity = obterParametroPorNome("cidades");
+var getAverage = obterParametroPorNome("nota");
+var getComments = obterParametroPorNome("avaliar");
 
-*/
+// Exibir dados
+
+function exibirDadosCadastrais(){
+    personalInfoScreen.innerHTML = getName;
+}
+
+
+
