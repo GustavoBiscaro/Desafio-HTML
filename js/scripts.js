@@ -1,5 +1,6 @@
-const infoScreen = document.querySelector('#headerInfo');
 
+const infoScreen = document.getElementById("headerInfo");
+const infoRegisterScreen = document.getElementById("headerInfoRegister");
 
 
 // Função para extrair os parâmetros da URL
@@ -20,6 +21,7 @@ function obterParametroPorNome(nome, url) {
     return decodeURIComponent(resultados[2].replace(/\+/g, " "));
 }
 
+
 var getName = obterParametroPorNome("nome");
 var getDate = obterParametroPorNome("nascimento");
 var getGender = obterParametroPorNome("genero");
@@ -30,11 +32,14 @@ var getCity = obterParametroPorNome("cidades");
 var getAverage = obterParametroPorNome("nota");
 var getComments = obterParametroPorNome("avaliar");
 
-// Exibir dados
 
-function exibirDadosCadastrais(){
-    personalInfoScreen.innerHTML = getName;
+
+
+
+if (getName !== null && infoScreen !== null) {
+    infoScreen.innerHTML = "<h1 class='titleInfoPost'>Confira seus dados</h1><h2>Nome</h2><p>" + getName + "</p>" + "<h2>Data</h2><p>" + getDate + "</p>" + "<h2>Gênero</h2><p>" + getGender + "</p>" + "<h2>Email</h2><p>" + getEmail + "</p>" + "<h2>País</h2><p>" + getCountry + "</p>" + "<h2>Estado</h2><p>" + getState + "</p>" + "<h2>Cidade</h2><p>" + getCity + "</p>" + "<h2>Média</h2><p>" + getAverage + "</p>" + "<h2>Comentário</h2><p>" + getComments + "</p>";
+    
+} else {
+    // Caso o parâmetro não tenha sido encontrado ou o elemento não exista, exiba uma mensagem de fallback
+    elementoHeaderInfo.innerHTML = "<h1 class='titleInfoPost'>Localização</h1><p>Parâmetro não encontrado na URL.</p>";
 }
-
-
-
